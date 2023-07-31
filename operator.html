@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <script src="/operator.js"></script>
+    <style>
+        .big {
+            display: flex;
+            justify-content: center;
+        }
+
+        a {
+            width: 300px;
+            height: 50px;
+            background-color: tomato;
+            color: beige;
+            display: flex;
+            font-size: 20px;
+            border-radius: 7px;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        li {
+            color: royalblue;
+        }
+
+        table {
+            margin: 30px 70px;
+            border-collapse: collapse;
+            width: 1300px;
+
+
+        }
+
+        caption {
+            font-size: 30px;
+
+        }
+
+        tr {
+            height: 50px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            text-align: center; 
+            font-size: 17px;
+
+
+        }
+
+        thead {
+            border: 1px solid black;
+        }
+    </style>
+    <title>Main Operators</title>
+</head>
+
+<body>
+    <h1>
+        Asosiy Operatorlar:
+        <ol>
+            <li>Arifmetik (arifmetic) operatorlar</li>
+            <li>Solishtirish (comparason) operatorlar</li>
+            <li>Tayinlash (assingment) operatorlar</li>
+            <li>Mantiqiy (logical) operatorlar</li>
+            <li>Uchlik (ternary) operatorlar</li>
+        </ol>
+    </h1>
+    <h2>
+        Operatorlar:bir yoki bir nechta operendlar ustida amal bajaradi. Umumiy ko'rinishi quyidagicha:
+    </h2>
+    <h2>
+        <xmp>
+            <chap operand> operator <o'ng operand> // son1+ son2
+                    <chap operand> operator // son1 ++
+                        operand <o'ng operand> // --son2
+        </xmp>
+    </h2>
+    <h3>
+        Arifmetik (arifmetic) operatorlar:
+    </h3>
+    <h3>
+        Javascript dasturlash tilida arifmetik operatorlardan foydalanib ikki operand ustida arifmetik amallar bajarish
+        imkoniyati mavjud
+    </h3>
+
+    <table>
+        <caption>Arifmetik operatorlar</caption>
+        <thead>
+            <tr>
+                <th>
+                    Operator
+                </th>
+                <th>
+                    Tavsifi
+                </th>
+                <th>
+                    Misol
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>+</td>
+                <td>Ikki operandni qo'shish</td>
+                <td>son1 + son2</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>O'ng tomondagi operandni chap tomondan ayrish </td>
+                <td>son1 - son2</td>
+            </tr>
+            <tr>
+                <td>*</td>
+                <td>Ikki operandni ko'paytirish</td>
+                <td>son1 * son2</td>
+            </tr>
+            <tr>
+                <td>/</td>
+                <td>Chap operandni o'ng operandga bo'lish. </td>
+                <td>son1 / son2</td>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>Modulus operatori.Ikki operanddan qoldiqni qaytarish</td>
+                <td>son1 % son2</td>
+            </tr>
+            <tr>
+                <td>++</td>
+                <td>Kattalashtirish (incerement) operatori. Operand qiymatini bittaga oshirish</td>
+                <td>son1 ++ yoki ++ son1</td>
+            </tr>
+            <tr>
+                <td>--</td>
+                <td>Kichiklashtish (descrement) operatori. Operand qiymatini bittaga kamaytirish</td>
+                <td>son2 -- yoki -- son2</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>
+        Solishtirish (comparison) Operatorlar :
+    </h3>
+    <h3>
+        Java script dasturlash tilida comparison operatorlardan foydalanib ikki operandlarni solishtirish imkoniyati
+        mavjud . Bunday operatorlar true yoki false qiymatni qaytaradi.
+    </h3>
+    <table>
+        <caption>Solishtirish operatorlar</caption>
+        <thead>
+            <tr>
+                <th>
+                    Operator
+                </th>
+                <th>
+                    Tavsifi
+                </th>
+                <th>
+                    Misol
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>==</td>
+                <td>Turini hisobga olmagan holda ikkita operandning tengligini solishtirish</td>
+                <td>variable1 == variable2</td>
+            </tr>
+            <tr>
+                <td>===</td>
+                <td>Turi va qiymati bo'yicha ikki operandning tengligini solishtirish </td>
+                <td>variable1 === variable2</td>
+            </tr>
+            <tr>
+                <td>!=</td>
+                <td>Ikki operandni notengligini (teng emasligini) tekshirish.</td>
+                <td>variable1 != variable2</td>
+            </tr>
+            <tr>
+                <td>></td>
+                <td>Chap tarafdagi qiymatni o'ngdagi qiymatdan katta bo'lsa, true qiymatni qaytaradi aks holda ,false
+                    qaytaradi. </td>
+                <td>variable1 > variable2</td>
+            </tr>
+            <tr>
+                <td>
+                    <</td>
+                <td>Chap tarafdagi qiymatni o'ngdagi qiymatdan kichik bo'lsa, true qiymatni qaytaradi aks holda ,false
+                    qaytaradi.</td>
+                <td>variable1 < variable2</td>
+            </tr>
+            <tr>
+                <td>>=</td>
+                <td>Chap tarafdagii qiymatni o'ngdagi qiymatdan katta yoki teng bo'lsa, true qiymatni qaytaradi aks
+                    holda ,false qaytaradi.</td>
+                <td>variable1 >= variable2</td>
+            </tr>
+            <tr>
+                <td>
+                    <= </td>
+                <td>Chap tarafdagii qiymatni o'ngdagi qiymatdan kichik yoki teng bo'lsa, true qiymatni qaytaradi aks
+                    holda ,false qaytaradi.</td>
+                <td>variable1 <= variable</td>
+            </tr>
+        </tbody>
+    </table> 
+    <h3>
+        Tayinlash (assingment) operatorlar
+    </h3>
+    <h3>
+        Javascript dagi tayinlash operatorlardan foydalanib o'zgaruvchilarga qisqartma ko'rinishda yangi qiymatlar tayinlash mavjud.
+    </h3>
+    
+    <table>
+        <caption>Tayinlash</caption>
+        <thead>
+            <tr>
+                <th>
+                    Operator
+                </th>
+                <th>
+                    Tavsifi
+                </th>
+                <th>
+                    Misol
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>=</td>
+                <td>Chap operandga o'ng operand qiymatini belgilaydi</td>
+                <td>variable1 = variable2</td>
+            </tr>
+            <tr>
+                <td>+=</td>
+                <td>Chap va o'ng operand qiymatlarini umumlashtirib (qo'shib) va natijani chap operandga tayinlaydi </td>
+                <td>variable1 += variable2</td>
+            </tr>
+            <tr>
+                <td>-=</td>
+                <td>Chap va o'ng operand qiymatidan o'ng operand qiymatini olib tashlab va natijani chap operandga tayinlaydi</td>
+                <td>variable1 -= variable2</td>
+            </tr>
+            <tr>
+                <td>*=</td>
+                <td>Chap va o'ng operand qiymatlarini ko'paytirib va natijani chap operandga tayinlaydi </td>
+                <td>variable1 *= variable2</td>
+            </tr>
+            <tr>
+                <td>/=</td>
+                <td>Chap operand qiymatini umumlashtirib o'ng operand qiymatiga bo'lib va natijani chap operandga tayinlaydi</td>
+                <td>variable1 /= variable2</td>
+            </tr>
+            <tr>
+                <td>%=</td>
+                <td>Chap operand modulini  o'ng operandga  bo'linishini olib  va natijani chap operandga tayinlaydi</td>
+                <td>variable1 %= variable2</td>
+            </tr>
+        
+        </tbody>
+    </table>
+    <div class="link">
+        <a href="./index.html">Home page ga qaytish</a>
+    </div>
+
+
+</body>
+
+</html>
